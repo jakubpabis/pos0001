@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "One-off, exclusive, high quality posters | Postery.studio"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark navbar-togglable fixed-top px-4",
+    "container": "container-fluid"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="overlay overlay-black overlay-30" data-jarallax data-speed=".8" style="background-image: url(assets/img/header1.jpg)">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center min-vh-100 py-8 py-md-11">
+          <div class="col-12 col-md-8 col-lg-7 mt-auto">
+
+            <h1 class="display-1 playfair text-gray-400 font-weight-bolds">
+              The one-off exclusive posters 
+            </h1>
+
+            <!-- Heading -->
+            <h3 class="text-gray-200 pr-12">
+              Each and every poster is made in only <strong>7 copies</strong>.
+              That's it! If you don't buy it now, you'll never do!
+            </h3>
+
+            <a data-toggle="smooth-scroll" data-offset="0" href="#allProducts" class="btn btn-primary text-gray-200 lift display-2 font-weight-bolder mt-3">
+              Shop now!
+            </a>
+
+          </div>
+          <div class="col-12 mt-auto text-center">
+
+            <!-- Button -->
+            <a class="btn btn-white btn-rounded-circle shadow" data-toggle="smooth-scroll" data-offset="0" href="#allProducts">
+              <i class="fe fe-arrow-down"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section id="allProducts" class="py-8 py-md-11">
+      <div class="container">
+        <div class="row" id="portfolio" data-isotope='{"layoutMode": "masonry"}'>
+          <div class="col-12 col-md-4">
+
+            <!-- Card -->
+            <a class="card shadow-light-lg mb-7 border-black" data-toggle="smooth-scroll" data-offset="0" href="#posterOne">
+
+              <!-- Image -->
+              <div class="card-zoom border-white">
+                <img class="card-img" src="assets/img/photos/poster1.jpg" alt="...">
+              </div>
+
+              <!-- Overlay -->
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white pt-4 pb-5">
+
+                  <!-- Shape -->
+                  <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                    @@include("assets/img/shapes/curves/curve-1.svg")
+                  </div>
+
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">Size: 110 x 80</h6>
+
+                  <!-- Heading -->
+                  <h4 class="mb-0 playfair font-weight-bold">Looking at the sky</h4>
+
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+          <div class="col-12 col-md-8">
+
+            <!-- Card -->
+            <a class="card shadow-light-lg mb-7 border-black" data-toggle="smooth-scroll" data-offset="0" href="#posterTwo">
+
+              <!-- Image -->
+              <div class="card-zoom border-white">
+                <img class="card-img" src="assets/img/photos/poster2.jpg" alt="...">
+              </div>
+
+              <!-- Overlay -->
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white pt-4 pb-5">
+
+                  <!-- Shape -->
+                  <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                    @@include("assets/img/shapes/curves/curve-1.svg")
+                  </div>
+
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">Size: 80 x 115</h6>
+
+                  <!-- Heading -->
+                  <h4 class="mb-0 playfair font-weight-bold">The dark forest</h4>
+
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE
+    ================================================== -->
+    <!-- <section class="min-vh-100" id="sectionTwo" data-jarallax data-speed=".8" style="background-image: url(assets/img/photos/product1.jpg)"></section> -->
+
+
+    <section id="posterOne">
+      <div class="container">
+        <div class="row justify-content-between align-items-stretch">
+          <div class="col-12 col-md-4 py-8 py-md-10 min-vh-100 d-flex align-items-center">
+
+            <div>
+              <!-- Heading -->
+              <h1 class="playfair font-weight-bold">
+                Looking at the sky
+              </h1>
+
+              <!-- Text -->
+              <p class="font-size-lg text-gray-700 mb-3">
+                Photo of a dark, stormy sky taken from below of the modern street lantern.
+              </p>
+
+              <h6 class="text-muted text-uppercase mt-0 mb-5">
+                Size: 110 x 80 cm
+              </h6>
+
+              <h6 class="mb-2 text-muted">
+                Left in stock: <span class="text-gray-800">2 out of 7</span>
+              </h6>
+
+              <!-- Button -->
+              <a href="!#" class="btn btn-sm btn-primary text-white lift font-weight-bolder">
+                <i class="fe fe-shopping-cart mr-2"></i>
+                Add to cart
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-8 min-vh-100">
+
+            <!-- Image -->
+            <div class="position-relative h-100 vw-75 bg-cover right" data-jarallax data-speed=".8" style="background-image: url(assets/img/photos/product1.jpg);">
+
+              <!-- Shape -->
+              <div class="shape shape-left shape-fluid-y svg-shim text-white">
+                @@include("assets/img/shapes/angles/angle-left.svg")
+              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <section id="posterTwo">
+      <div class="container">
+        <div class="row justify-content-between align-items-stretch">
+
+          <div class="col-12 col-md-4 order-12 py-8 py-md-10 min-vh-100 d-flex align-items-center">
+
+            <div>
+              <!-- Heading -->
+              <h1 class="playfair font-weight-bold">
+                The dark forest
+              </h1>
+
+              <!-- Text -->
+              <p class="font-size-lg text-gray-700 mb-3">
+                Photo of a dark, stormy sky taken from below of the modern street lantern.
+              </p>
+
+              <h6 class="text-muted text-uppercase mt-0 mb-5">
+                Size: 110 x 80 cm
+              </h6>
+
+              <h6 class="mb-2 text-muted">
+                Left in stock: <span class="text-gray-800">2 out of 7</span>
+              </h6>
+
+              <!-- Button -->
+              <a href="!#" class="btn btn-sm btn-primary text-white lift font-weight-bolder">
+                <i class="fe fe-shopping-cart mr-2"></i>
+                Add to cart
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-8 order-1 min-vh-100">
+
+            <!-- Image -->
+            <div class="position-relative h-100 vw-75 bg-cover float-right" data-jarallax data-speed=".8" style="background-image: url(assets/img/photos/product2.jpg);">
+
+              <!-- Shape -->
+              <div class="shape shape-right shape-fluid-y svg-shim text-white">
+                @@include("assets/img/shapes/angles/angle-right.svg")
+              </div>
+
+            </div>
+
+          </div>
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- CTA
+    ================================================== -->
+    <section class="pt-7 pt-md-10 bg-light">
+      <div class="container py-6 py-md-8 border-top border-bottom border-gray-300">
+        <div class="row align-items-center">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h3 class="mb-1 font-weight-bold">
+              Get our stories delivered
+            </h3>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6 mb-md-0">
+              From us to your inbox weekly.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-5">
+
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col">
+
+                  <!-- Input -->
+                  <input type="email" class="form-control" placeholder="Enter your email">
+
+                </div>
+                <div class="col-auto ml-n5">
+
+                  <!-- Button -->
+                  <button class="btn btn-primary" type="submit">
+                    Subscribe
+                  </button>
+
+                </div>
+              </div> <!-- / .row -->
+            </form>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-light"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

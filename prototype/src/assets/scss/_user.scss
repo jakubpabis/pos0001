@@ -1,0 +1,32 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+
+.navbar-dark .btn-cart {
+    filter: brightness(0.5) invert(1);
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif!important;
+}
+
+.font-weight-bolds {
+    font-weight: 800!important;
+}
+
+.navbar {
+    padding: 1em 0;
+}
+
+.border-black {
+    border: 6px solid $black;
+}
+
+.border-white {
+    border: 13px solid white;
+}
+
+.container {
+
+}
