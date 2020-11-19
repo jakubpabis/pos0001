@@ -476,7 +476,7 @@ pre {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1040px; } }
+    max-width: 1140px; } }
 
 .row {
   display: -webkit-box;
@@ -12936,7 +12936,7 @@ code {
 
 @media (min-width: 1200px) {
   .w-cover {
-    width: calc(100% + (100vw - 1040px) / 2 + 40px); } }
+    width: calc(100% + (100vw - 1140px) / 2 + 40px); } }
 
 .font-size-sm {
   font-size: 0.9375rem !important; }

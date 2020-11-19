@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Looking at the sky - single poster | Postery.studio"
+    })
+  </head>
+  <body class="pt-10 pt-md-0" style="overflow: visible;">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom px-4",
+    "container": "container-fluid"
+    })
+
+    <!-- CONTENT
+    ================================================== -->
+    <div class="container-fluid px-md-0">
+      <div class="row justify-content-between no-gutters mx-md-0">
+        <div class="col-12 col-md-4 position-md-sticky d-flex align-items-center vh-md-100 mx-auto" style="top: 0;">
+
+          <!-- Sidebar -->
+          <aside class="flex-grow-1 py-8 py-md-10">
+
+            <!-- Heading -->
+            <h1 class="playfair font-weight-bold">
+                Looking at the sky
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700 mb-3">
+                Photo of a dark, stormy sky taken from below of the modern street lantern.
+            </p>
+
+            <!-- List group -->
+            <ul class="list-group list-group-flush mt-6">
+              <li class="list-group-item pb-4">
+
+                <!-- Heading -->
+                <div class="d-flex align-items-center">
+                    <h6 class="mb-0 text-uppercase">
+                        Choose the size 
+                    </h6>
+                    <div class="dropdown show ml-auto mt-n1">
+                        <a class="btn btn-xs btn-link dropdown-toggle pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            35 &times; 50 cm
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xs dropdown-menu-right text-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">50 &times; 70 cm</a>
+                            <a class="dropdown-item" href="#">70 &times; 100 cm</a>
+                        </div>
+                    </div>
+                </div>
+
+              </li>
+              <li class="list-group-item py-4">
+
+                <!-- Heading -->
+                <div class="d-flex align-items-center">
+                    <h6 class="mb-0 text-uppercase">
+                        Add padding?
+                    </h6>
+                    <div class="dropdown show ml-auto mt-n1">
+                        <a class="btn btn-xs btn-link dropdown-toggle pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            No, thanks
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xs dropdown-menu-right text-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Yes, please</a>
+                        </div>
+                    </div>
+                </div>
+
+              </li>
+              <li class="list-group-item">
+
+                <div class="d-flex align-items-center">
+                    <h6 class="mb-0 text-uppercase">
+                        Price <small class="text-lowercase text-muted">(Choose the currency)</small>
+                    </h6>
+                    <div class="dropdown show ml-auto mt-n1">
+                        <a class="btn btn-xs btn-link dropdown-toggle pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            299 PLN
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xs dropdown-menu-right text-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">59 GBP</a>
+                            <a class="dropdown-item" href="#">69 EUR</a>
+                            <a class="dropdown-item" href="#">79 USD</a>
+                        </div>
+                    </div>
+                </div>
+
+              </li>
+            </ul>
+
+          </aside>
+
+        </div>
+        <div class="col-12 col-md-7">
+
+          <!-- Images -->
+          <section class="pt-md-10">
+            <img class="w-100 h-auto mb-5" src="assets/img/photos/product1.jpg" alt="...">
+            <img class="w-100 h-auto" src="assets/img/photos/poster1.jpg" alt="...">
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative" style="z-index: 1;">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- RELATED
+    ================================================== -->
+    <section class="pt-7 pt-md-10 bg-light">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h3 class="mb-0 playfair font-weight-bolds">
+              Related Posters
+            </h3>
+
+            <!-- Text -->
+            <p class="mb-0 text-muted">
+              Other goodies that are similar to this one.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-auto">
+
+            <!-- Button -->
+            <a href="#!" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline">
+              View all
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
+
+              <!-- Image -->
+              <div class="card-zoom">
+                <img class="card-img-top" src="assets/img/portfolio/portfolio-1.jpg" alt="...">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Heading -->
+                <h4 class="mb-0 playfair font-weight-bolds">Curology Campaign</h4>
+
+              </div>
+
+            </a>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
+
+              <!-- Image -->
+              <div class="card-zoom">
+                <img class="card-img-top" src="assets/img/portfolio/portfolio-2.jpg" alt="...">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Heading -->
+                <h4 class="mb-0 playfair font-weight-bolds">Honest Packaging</h4>
+
+              </div>
+
+            </a>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <a class="card d-md-none d-lg-flex shadow-light-lg" href="#!">
+
+              <!-- Image -->
+              <div class="card-zoom">
+                <img class="card-img-top" src="assets/img/portfolio/portfolio-4.jpg" alt="...">
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Heading -->
+                <h4 class="mb-0 playfair font-weight-bolds">Doodle Pad</h4>
+
+              </div>
+
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CTA
+    ================================================== -->
+    <section class="pt-7 pt-md-10 bg-light">
+        <div class="container py-6 py-md-8 border-top border-bottom border-gray-300">
+          <div class="row align-items-center">
+            <div class="col-12 col-md">
+  
+              <!-- Heading -->
+              <h3 class="mb-1 playfair font-weight-bolds">
+                Want to keep in touch?
+              </h3>
+  
+              <!-- Text -->
+              <p class="font-size-lg text-muted mb-6 mb-md-0">
+                Subscribe to our newsletter today!
+              </p>
+  
+            </div>
+            <div class="col-12 col-md-5">
+  
+              <!-- Form -->
+              <form>
+                <div class="row">
+                  <div class="col">
+  
+                    <!-- Input -->
+                    <input type="email" class="form-control" placeholder="Enter your email">
+  
+                  </div>
+                  <div class="col-auto ml-n5">
+  
+                    <!-- Button -->
+                    <button class="btn btn-primary text-white" type="submit">
+                      Subscribe
+                    </button>
+  
+                  </div>
+                </div> <!-- / .row -->
+              </form>
+  
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-light"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
