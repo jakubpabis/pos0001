@@ -214,6 +214,8 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/typed.js/lib/typed.min.js"></script>
 
+	<script src="https://kit.fontawesome.com/7acc43e0e6.js" crossorigin="anonymous"></script>
+
 	<!-- Theme JS -->
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/theme.min.js"></script>
 

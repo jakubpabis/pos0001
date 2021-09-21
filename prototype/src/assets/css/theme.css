@@ -13982,3 +13982,12 @@ body.compensate-for-scrollbar {
 
 .pay-icon {
   font-size: 1.6em; }
+
+.whole-element-link {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9; }
