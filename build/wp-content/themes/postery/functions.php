@@ -256,3 +256,32 @@ add_action('init', 'postery_posters_setup');
 // remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 // remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
 //remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+
+
+// attribute slug to title
+if (!function_exists('attribute_slug_to_title')) {
+	function attribute_slug_to_title($attribute, $slug)
+	{
+		global $woocommerce;
+		if (taxonomy_exists(esc_attr(str_replace('attribute_', '', $attribute)))) {
+			$term = get_term_by('slug', $slug, esc_attr(str_replace('attribute_', '', $attribute)));
+			if (!is_wp_error($term) && $term->name) {
+				$value = $term->name;
+			}
+		} else {
+			$value = apply_filters('woocommerce_variation_option_name', $value);
+		}
+		return $value;
+	}
+}
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+//remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50);
+
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 30);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 40);

@@ -14,16 +14,16 @@ get_header(); ?>
 			<div class="col-12 col-md-8 col-lg-7 mt-auto">
 
 				<h1 class="display-1 playfair text-gray-400 font-weight-bolds">
-					The one and only exclusive posters
+					The one-off exclusive posters
 				</h1>
 
 				<!-- Heading -->
 				<h3 class="text-gray-200 pr-12">
-					Each and every poster is made with care and love.<br />
-					Our original photos will complete your space.
+					Each and every poster is made in only <strong>10 copies</strong>.
+					That's it! If you don't buy it now, you'll never do!
 				</h3>
 
-				<a data-toggle="smooth-scroll" data-offset="0" href="#allProductsGrid" class="btn btn-primary text-gray-200 lift display-2 font-weight-bolder mt-4">
+				<a data-toggle="smooth-scroll" data-offset="0" href="#allProducts" class="btn btn-primary text-gray-200 lift display-2 font-weight-bolder mt-4">
 					Shop now!
 				</a>
 
@@ -31,7 +31,7 @@ get_header(); ?>
 			<div class="col-12 mt-auto text-center">
 
 				<!-- Button -->
-				<a class="btn btn-white btn-rounded-circle shadow" data-toggle="smooth-scroll" data-offset="0" href="#allProductsGrid">
+				<a class="btn btn-white btn-rounded-circle shadow" data-toggle="smooth-scroll" data-offset="0" href="#allProducts">
 					<i class="fe fe-arrow-down"></i>
 				</a>
 
@@ -40,7 +40,7 @@ get_header(); ?>
 	</div> <!-- / .container -->
 </header>
 
-<?php if (have_rows('sections')) : ?>
+<?php /* if (have_rows('sections')) : ?>
 	<?php while (have_rows('sections')) : the_row(); ?>
 		<?php if (get_row_layout() == 'grid') : ?>
 			<?php get_template_part('template-parts/flex-content/grid'); ?>
@@ -48,13 +48,83 @@ get_header(); ?>
 			<?php get_template_part('template-parts/flex-content/side-by-side'); ?>
 		<?php endif; ?>
 	<?php endwhile; ?>
-<?php endif; ?>
+<?php endif; */ ?>
+
+<?php
+
+$args = array(
+	'post_type'             => 'product',
+	'post_status'           => 'publish',
+	'ignore_sticky_posts'   => true,
+	'posts_per_page'        => -1,
+);
+$home_products = new WP_Query($args);
+//var_dump($products);
+
+?>
 
 <!-- All Products
-    ================================================== -->
-<?php /* if ($home_products->have_posts()) : ?>
+================================================== -->
+<?php if ($home_products->have_posts()) : ?>
 
-	
+	<section id="allProducts" class="py-8 py-md-11">
+		<div class="container">
+			<div class="row" id="portfolio" data-isotope='{"layoutMode": "masonry"}'>
+				<?php $i = 1;
+				while ($home_products->have_posts()) : $home_products->the_post(); ?>
+					<?php
+					$att_id = get_post_thumbnail_id($item);
+					$thumb = wp_get_attachment_image_src($att_id, 'full');
+					$url = $thumb[0];
+					$alt = get_post_meta($att_id, '_wp_attachment_image_alt', true);
+					$width = $thumb[1];
+					$height = $thumb[2];
+					if ($width > $height) {
+						$column = 'col-md-8';
+					} else if ($width < $height) {
+						$column = 'col-md-4';
+					} else {
+						$column = 'col-md-6';
+					}
+					?>
+					<div class="col-12 <?php echo $column; ?>">
+
+						<!-- Card -->
+						<a class="card shadow-light-lg mb-7 border-black" data-toggle="smooth-scroll" data-offset="0" href="#poster<?php echo $i; ?>">
+
+							<!-- Image -->
+							<div class="card-zoom border-white">
+								<img class="card-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="...">
+							</div>
+
+							<!-- Overlay -->
+							<div class="card-img-overlay card-img-overlay-hover">
+								<div class="card-body bg-white pt-4 pb-5">
+
+									<!-- Shape -->
+									<div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+										<svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+										</svg>
+									</div>
+
+									<!-- Heading -->
+									<h4 class="mb-0 playfair font-weight-bold">
+										<?php echo get_the_title(); ?>
+									</h4>
+
+								</div>
+							</div>
+
+						</a>
+
+					</div>
+				<?php $i++;
+				endwhile; ?>
+
+			</div>
+		</div>
+	</section>
 
 	<?php $i = 1;
 	while ($home_products->have_posts()) : $home_products->the_post(); ?>
@@ -146,6 +216,7 @@ get_header(); ?>
 	<?php $i++;
 	endwhile; ?>
 
-<?php endif; */ ?>
+<?php endif; ?>
+
 
 <?php get_footer();

@@ -3,26 +3,26 @@
 // Theme module
 //
 
-'use strict';
+"use strict";
 
-(function() {
-  var navbarTogglable = document.querySelectorAll('.navbar-togglable');
-  var navbarCollapse = document.querySelectorAll('.navbar-collapse');
-  var windowEvents = ['load', 'scroll'];
+(function () {
+  var navbarTogglable = document.querySelectorAll(".navbar-togglable");
+  var navbarCollapse = document.querySelectorAll(".navbar-collapse");
+  var windowEvents = ["load", "scroll"];
   var isLight = false;
 
   function makeNavbarDark(navbar) {
-    navbar.classList.remove('navbar-light');
-    navbar.classList.remove('bg-white');
-    navbar.classList.add('navbar-dark');
+    navbar.classList.remove("navbar-light");
+    navbar.classList.remove("bg-white");
+    navbar.classList.add("navbar-dark");
 
     isLight = false;
   }
 
   function makeNavbarLight(navbar) {
-    navbar.classList.remove('navbar-dark');
-    navbar.classList.add('navbar-light');
-    navbar.classList.add('bg-white');
+    navbar.classList.remove("navbar-dark");
+    navbar.classList.add("navbar-light");
+    navbar.classList.add("bg-white");
 
     isLight = true;
   }
@@ -42,36 +42,62 @@
   function overflowHide() {
     var scrollbarWidth = getScrollbarWidth();
 
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.paddingRight = scrollbarWidth + 'px';
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.paddingRight = scrollbarWidth + "px";
   }
 
   function overflowShow() {
-    document.documentElement.style.overflow = '';
-    document.body.style.paddingRight = '';
+    document.documentElement.style.overflow = "";
+    document.body.style.paddingRight = "";
   }
 
   function getScrollbarWidth() {
     return window.innerWidth - document.documentElement.clientWidth;
   }
 
-  [].forEach.call(navbarTogglable, function(navbar) {
-    windowEvents.forEach(function(event) {
-      window.addEventListener(event, function() {
+  [].forEach.call(navbarTogglable, function (navbar) {
+    windowEvents.forEach(function (event) {
+      window.addEventListener(event, function () {
         toggleNavbar(navbar);
       });
     });
   });
 
-  [].forEach.call(navbarCollapse, function(collapse) {
+  [].forEach.call(navbarCollapse, function (collapse) {
     $(collapse).on({
-      'show.bs.collapse': function() {
+      "show.bs.collapse": function () {
         overflowHide();
       },
-      'hidden.bs.collapse': function() {
+      "hidden.bs.collapse": function () {
         overflowShow();
-      }
+      },
     });
   });
-
 })();
+
+// console.log("user");
+// function niceVariationDropdown() {
+//   $(".variations_form")
+//     .find("ul.variations")
+//     .find("li")
+//     .each(function () {
+//       if ($(this).find(".variationSelect")) {
+//         console.log("options");
+//         var $varSelect = $(this).find(".variationSelect");
+//         var $dropOption = $(this).find(".dropdown-menu").find(".dropdown-item");
+//         $dropOption.on("click", function () {
+//           $varSelect.trigger("click");
+//           $varSelect
+//             .find('option[value="' + $(this).data("option") + '"]')
+//             .trigger("click")
+//             .prop("selected", true);
+//           $varSelect.val($(this).data("option"));
+//           console.log($(this).data("option"));
+//         });
+//       }
+//     });
+// }
+
+// jQuery(document).ready(function () {
+//   niceVariationDropdown();
+// });
