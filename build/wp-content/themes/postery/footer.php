@@ -238,7 +238,7 @@
 <script src="https://kit.fontawesome.com/7acc43e0e6.js" crossorigin="anonymous"></script>
 
 <!-- Theme JS -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/theme.min.js?v=1.0.5"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/theme.min.js?v=1.0.7"></script>
 
 </body>
 

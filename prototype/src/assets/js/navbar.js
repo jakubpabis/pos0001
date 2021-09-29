@@ -74,30 +74,3 @@
     });
   });
 })();
-
-// console.log("user");
-// function niceVariationDropdown() {
-//   $(".variations_form")
-//     .find("ul.variations")
-//     .find("li")
-//     .each(function () {
-//       if ($(this).find(".variationSelect")) {
-//         console.log("options");
-//         var $varSelect = $(this).find(".variationSelect");
-//         var $dropOption = $(this).find(".dropdown-menu").find(".dropdown-item");
-//         $dropOption.on("click", function () {
-//           $varSelect.trigger("click");
-//           $varSelect
-//             .find('option[value="' + $(this).data("option") + '"]')
-//             .trigger("click")
-//             .prop("selected", true);
-//           $varSelect.val($(this).data("option"));
-//           console.log($(this).data("option"));
-//         });
-//       }
-//     });
-// }
-
-// jQuery(document).ready(function () {
-//   niceVariationDropdown();
-// });

@@ -32,32 +32,34 @@ global $product;
 					<?php echo strip_tags(get_the_content()); ?>
 				</p>
 
-				<?php do_action('woocommerce_single_product_summary'); ?>
+
 
 				<ul class="list-group list-group-flush mt-6 mb-8 variations d-none">
 					<li class="list-group-item pb-4">
 						<!-- Heading -->
 						<div class="d-flex align-items-center">
-							<h6 class="mb-0 text-uppercase label">
-								Poster size
+							<h6 class="mb-0 text-uppercase">
+								Choose the size
 							</h6>
 							<div class="dropdown show ml-auto mt-n1">
-								<a class="btn btn-xs btn-link dropdown-toggle pr-0" href="#" role="button" id="dropdownMenuSize" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Choose the size
+								<a class="btn btn-xs btn-link dropdown-toggle pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									35 &times; 50 cm
 								</a>
-								<div class="dropdown-menu dropdown-menu-xs dropdown-menu-right text-right" aria-labelledby="dropdownMenuSize">
-									<?php foreach ($options as $option) : ?>
-										<a class="dropdown-item" data-option="<?php echo $option; ?>" href="javascript:void(0)"><?php echo wc_attribute_label($attribute_name); ?></a>
-									<?php endforeach; ?>
+								<div class="dropdown-menu dropdown-menu-xs dropdown-menu-right text-right" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="#">50 &times; 70 cm</a>
+									<a class="dropdown-item" href="#">70 &times; 100 cm</a>
 								</div>
-
 							</div>
 						</div>
 
 					</li>
 				</ul>
 
-				<div class="d-flex justify-content-between">
+				<?php do_action('woocommerce_single_product_summary'); ?>
+
+				<div class="leftInStockAmount d-none"><?php echo $product->get_stock_quantity(); ?> out of 7</div>
+
+				<div class="d-flex justify-content-between addToCartContainer">
 
 					<div class="d-flex mt-2">
 						<span class="mr-5 text-center">
@@ -71,10 +73,10 @@ global $product;
 					</div>
 
 					<div class="text-right">
-						<a href="!#" class="btn btn-primary text-white lift font-weight-bolder mb-4">
+						<button type="submit" class="single_add_to_cart_button btn btn-primary text-white lift font-weight-bolder mb-4">
 							<i class="fe fe-shopping-cart mr-2"></i>
 							Add to cart
-						</a>
+						</button>
 						<div>
 							<i class="fab fa-apple-pay pay-icon text-gray-700 my-0 ml-2"></i>
 							<i class="fab fa-google-pay pay-icon text-gray-700 my-0 ml-2"></i>

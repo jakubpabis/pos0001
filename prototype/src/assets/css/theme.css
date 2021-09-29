@@ -302,7 +302,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6, form.variations_form.cart table.variations tbody tr td.label label {
   margin-bottom: 0.5rem;
   font-weight: 400;
   line-height: 1; }
@@ -322,7 +322,7 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.0625rem; }
 
-h6, .h6 {
+h6, .h6, form.variations_form.cart table.variations tbody tr td.label label {
   font-size: 0.75rem; }
 
 .lead {
@@ -1990,7 +1990,7 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn {
+.btn, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi {
   display: inline-block;
   font-weight: 600;
   color: #111111;
@@ -2009,21 +2009,21 @@ textarea.form-control {
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn {
+    .btn, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi {
       -webkit-transition: none;
       transition: none; } }
-  .btn:hover {
+  .btn:hover, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:hover, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:hover {
     color: #111111;
     text-decoration: none; }
-  .btn:focus, .btn.focus {
+  .btn:focus, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:focus, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:focus, .btn.focus, form.variations_form.cart table.variations tbody tr td.value span.focus.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.focus {
     outline: 0;
     box-shadow: none; }
-  .btn.disabled, .btn:disabled {
+  .btn.disabled, form.variations_form.cart table.variations tbody tr td.value span.disabled.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.disabled, .btn:disabled, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:disabled, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:disabled {
     opacity: 0.65;
     box-shadow: none; }
-  .btn:not(:disabled):not(.disabled) {
+  .btn:not(:disabled):not(.disabled), form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:not(:disabled):not(.disabled), form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:not(:disabled):not(.disabled) {
     cursor: pointer; }
-    .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
+    .btn:not(:disabled):not(.disabled):active, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:not(:disabled):not(.disabled):active, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:not(:disabled):not(.disabled).active, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:not(:disabled):not(.disabled).active {
       box-shadow: none; }
 
 a.btn.disabled,
@@ -2049,12 +2049,16 @@ fieldset:disabled a.btn {
     background-color: #C98F39;
     border-color: #C98F39; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-primary.dropdown-toggle {
+  .show > .btn-primary.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-primary.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-primary {
     color: #FFFFFF;
     background-color: #a3732c;
     border-color: #996c2a; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-primary.dropdown-toggle:focus {
+    .show > .btn-primary.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-primary.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-primary:focus {
       box-shadow: 0 0 0 0 rgba(182, 133, 60, 0.5); }
 
 .btn-secondary {
@@ -2076,12 +2080,16 @@ fieldset:disabled a.btn {
     background-color: #111111;
     border-color: #111111; }
   .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
-  .show > .btn-secondary.dropdown-toggle {
+  .show > .btn-secondary.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-secondary.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-secondary {
     color: #FFFFFF;
     background-color: black;
     border-color: black; }
     .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-secondary.dropdown-toggle:focus {
+    .show > .btn-secondary.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-secondary.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-secondary:focus {
       box-shadow: 0 0 0 0 rgba(53, 53, 53, 0.5); }
 
 .btn-success {
@@ -2103,12 +2111,16 @@ fieldset:disabled a.btn {
     background-color: #42BA96;
     border-color: #42BA96; }
   .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
-  .show > .btn-success.dropdown-toggle {
+  .show > .btn-success.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-success.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-success {
     color: #FFFFFF;
     background-color: #359478;
     border-color: #318b70; }
     .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-success.dropdown-toggle:focus {
+    .show > .btn-success.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-success.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-success:focus {
       box-shadow: 0 0 0 0 rgba(94, 196, 166, 0.5); }
 
 .btn-info {
@@ -2130,12 +2142,16 @@ fieldset:disabled a.btn {
     background-color: #7C69EF;
     border-color: #7C69EF; }
   .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
-  .show > .btn-info.dropdown-toggle {
+  .show > .btn-info.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-info.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-info {
     color: #FFFFFF;
     background-color: #543bea;
     border-color: #4a2fe9; }
     .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-info.dropdown-toggle:focus {
+    .show > .btn-info.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-info.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-info:focus {
       box-shadow: 0 0 0 0 rgba(144, 128, 241, 0.5); }
 
 .btn-warning {
@@ -2157,12 +2173,16 @@ fieldset:disabled a.btn {
     background-color: #FAD776;
     border-color: #FAD776; }
   .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
-  .show > .btn-warning.dropdown-toggle {
+  .show > .btn-warning.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-warning.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-warning {
     color: #4b4b4b;
     background-color: #f8c945;
     border-color: #f8c538; }
     .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-warning.dropdown-toggle:focus {
+    .show > .btn-warning.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-warning.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-warning:focus {
       box-shadow: 0 0 0 0 rgba(224, 194, 112, 0.5); }
 
 .btn-danger {
@@ -2184,12 +2204,16 @@ fieldset:disabled a.btn {
     background-color: #DF4759;
     border-color: #DF4759; }
   .btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active,
-  .show > .btn-danger.dropdown-toggle {
+  .show > .btn-danger.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-danger.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-danger {
     color: #FFFFFF;
     background-color: #cf2438;
     border-color: #c42235; }
     .btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-danger.dropdown-toggle:focus {
+    .show > .btn-danger.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-danger.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-danger:focus {
       box-shadow: 0 0 0 0 rgba(228, 99, 114, 0.5); }
 
 .btn-light {
@@ -2211,12 +2235,16 @@ fieldset:disabled a.btn {
     background-color: #fafafa;
     border-color: #fafafa; }
   .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
-  .show > .btn-light.dropdown-toggle {
+  .show > .btn-light.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-light.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-light {
     color: #4b4b4b;
     background-color: #e1e1e1;
     border-color: #dadada; }
     .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-light.dropdown-toggle:focus {
+    .show > .btn-light.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-light.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-light:focus {
       box-shadow: 0 0 0 0 rgba(224, 224, 224, 0.5); }
 
 .btn-dark {
@@ -2238,12 +2266,16 @@ fieldset:disabled a.btn {
     background-color: #4b4b4b;
     border-color: #4b4b4b; }
   .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
-  .show > .btn-dark.dropdown-toggle {
+  .show > .btn-dark.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-dark.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-dark {
     color: #FFFFFF;
     background-color: #323232;
     border-color: #2b2b2b; }
     .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-dark.dropdown-toggle:focus {
+    .show > .btn-dark.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-dark.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-dark:focus {
       box-shadow: 0 0 0 0 rgba(102, 102, 102, 0.5); }
 
 .btn-primary-desat {
@@ -2265,12 +2297,16 @@ fieldset:disabled a.btn {
     background-color: #dfa349;
     border-color: #dfa349; }
   .btn-primary-desat:not(:disabled):not(.disabled):active, .btn-primary-desat:not(:disabled):not(.disabled).active,
-  .show > .btn-primary-desat.dropdown-toggle {
+  .show > .btn-primary-desat.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-primary-desat.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-primary-desat {
     color: #FFFFFF;
     background-color: #d08c25;
     border-color: #c68423; }
     .btn-primary-desat:not(:disabled):not(.disabled):active:focus, .btn-primary-desat:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-primary-desat.dropdown-toggle:focus {
+    .show > .btn-primary-desat.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-primary-desat.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-primary-desat:focus {
       box-shadow: 0 0 0 0 rgba(201, 150, 73, 0.5); }
 
 .btn-black {
@@ -2292,12 +2328,16 @@ fieldset:disabled a.btn {
     background-color: #111111;
     border-color: #111111; }
   .btn-black:not(:disabled):not(.disabled):active, .btn-black:not(:disabled):not(.disabled).active,
-  .show > .btn-black.dropdown-toggle {
+  .show > .btn-black.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-black.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-black {
     color: #FFFFFF;
     background-color: black;
     border-color: black; }
     .btn-black:not(:disabled):not(.disabled):active:focus, .btn-black:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-black.dropdown-toggle:focus {
+    .show > .btn-black.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-black.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-black:focus {
       box-shadow: 0 0 0 0 rgba(53, 53, 53, 0.5); }
 
 .btn-white {
@@ -2319,12 +2359,16 @@ fieldset:disabled a.btn {
     background-color: #FFFFFF;
     border-color: #FFFFFF; }
   .btn-white:not(:disabled):not(.disabled):active, .btn-white:not(:disabled):not(.disabled).active,
-  .show > .btn-white.dropdown-toggle {
+  .show > .btn-white.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-white.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-white {
     color: #4b4b4b;
     background-color: #e6e6e6;
     border-color: #dfdfdf; }
     .btn-white:not(:disabled):not(.disabled):active:focus, .btn-white:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-white.dropdown-toggle:focus {
+    .show > .btn-white.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-white.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-white:focus {
       box-shadow: 0 0 0 0 rgba(228, 228, 228, 0.5); }
 
 .btn-outline-primary {
@@ -2340,12 +2384,16 @@ fieldset:disabled a.btn {
     color: #C98F39;
     background-color: transparent; }
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-primary.dropdown-toggle {
+  .show > .btn-outline-primary.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-primary.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-primary {
     color: #4b4b4b;
     background-color: #C98F39;
     border-color: #C98F39; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-primary.dropdown-toggle:focus {
+    .show > .btn-outline-primary.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-primary.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-primary:focus {
       box-shadow: 0 0 0 0 rgba(201, 143, 57, 0.5); }
 
 .btn-outline-secondary {
@@ -2361,12 +2409,16 @@ fieldset:disabled a.btn {
     color: #111111;
     background-color: transparent; }
   .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-secondary.dropdown-toggle {
+  .show > .btn-outline-secondary.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-secondary.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-secondary {
     color: #FFFFFF;
     background-color: #111111;
     border-color: #111111; }
     .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-secondary.dropdown-toggle:focus {
+    .show > .btn-outline-secondary.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-secondary.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-secondary:focus {
       box-shadow: 0 0 0 0 rgba(17, 17, 17, 0.5); }
 
 .btn-outline-success {
@@ -2382,12 +2434,16 @@ fieldset:disabled a.btn {
     color: #42BA96;
     background-color: transparent; }
   .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-success.dropdown-toggle {
+  .show > .btn-outline-success.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-success.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-success {
     color: #FFFFFF;
     background-color: #42BA96;
     border-color: #42BA96; }
     .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-success.dropdown-toggle:focus {
+    .show > .btn-outline-success.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-success.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-success:focus {
       box-shadow: 0 0 0 0 rgba(66, 186, 150, 0.5); }
 
 .btn-outline-info {
@@ -2403,12 +2459,16 @@ fieldset:disabled a.btn {
     color: #7C69EF;
     background-color: transparent; }
   .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-info.dropdown-toggle {
+  .show > .btn-outline-info.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-info.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-info {
     color: #FFFFFF;
     background-color: #7C69EF;
     border-color: #7C69EF; }
     .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-info.dropdown-toggle:focus {
+    .show > .btn-outline-info.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-info.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-info:focus {
       box-shadow: 0 0 0 0 rgba(124, 105, 239, 0.5); }
 
 .btn-outline-warning {
@@ -2424,12 +2484,16 @@ fieldset:disabled a.btn {
     color: #FAD776;
     background-color: transparent; }
   .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-warning.dropdown-toggle {
+  .show > .btn-outline-warning.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-warning.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-warning {
     color: #4b4b4b;
     background-color: #FAD776;
     border-color: #FAD776; }
     .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-warning.dropdown-toggle:focus {
+    .show > .btn-outline-warning.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-warning.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-warning:focus {
       box-shadow: 0 0 0 0 rgba(250, 215, 118, 0.5); }
 
 .btn-outline-danger {
@@ -2445,12 +2509,16 @@ fieldset:disabled a.btn {
     color: #DF4759;
     background-color: transparent; }
   .btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-danger.dropdown-toggle {
+  .show > .btn-outline-danger.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-danger.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-danger {
     color: #FFFFFF;
     background-color: #DF4759;
     border-color: #DF4759; }
     .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-danger.dropdown-toggle:focus {
+    .show > .btn-outline-danger.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-danger.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-danger:focus {
       box-shadow: 0 0 0 0 rgba(223, 71, 89, 0.5); }
 
 .btn-outline-light {
@@ -2466,12 +2534,16 @@ fieldset:disabled a.btn {
     color: #fafafa;
     background-color: transparent; }
   .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-light.dropdown-toggle {
+  .show > .btn-outline-light.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-light.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-light {
     color: #4b4b4b;
     background-color: #fafafa;
     border-color: #fafafa; }
     .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-light.dropdown-toggle:focus {
+    .show > .btn-outline-light.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-light.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-light:focus {
       box-shadow: 0 0 0 0 rgba(250, 250, 250, 0.5); }
 
 .btn-outline-dark {
@@ -2487,12 +2559,16 @@ fieldset:disabled a.btn {
     color: #4b4b4b;
     background-color: transparent; }
   .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-dark.dropdown-toggle {
+  .show > .btn-outline-dark.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-dark.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-dark {
     color: #FFFFFF;
     background-color: #4b4b4b;
     border-color: #4b4b4b; }
     .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-dark.dropdown-toggle:focus {
+    .show > .btn-outline-dark.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-dark.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-dark:focus {
       box-shadow: 0 0 0 0 rgba(75, 75, 75, 0.5); }
 
 .btn-outline-primary-desat {
@@ -2508,12 +2584,16 @@ fieldset:disabled a.btn {
     color: #dfa349;
     background-color: transparent; }
   .btn-outline-primary-desat:not(:disabled):not(.disabled):active, .btn-outline-primary-desat:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-primary-desat.dropdown-toggle {
+  .show > .btn-outline-primary-desat.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-primary-desat.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-primary-desat {
     color: #4b4b4b;
     background-color: #dfa349;
     border-color: #dfa349; }
     .btn-outline-primary-desat:not(:disabled):not(.disabled):active:focus, .btn-outline-primary-desat:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-primary-desat.dropdown-toggle:focus {
+    .show > .btn-outline-primary-desat.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-primary-desat.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-primary-desat:focus {
       box-shadow: 0 0 0 0 rgba(223, 163, 73, 0.5); }
 
 .btn-outline-black {
@@ -2529,12 +2609,16 @@ fieldset:disabled a.btn {
     color: #111111;
     background-color: transparent; }
   .btn-outline-black:not(:disabled):not(.disabled):active, .btn-outline-black:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-black.dropdown-toggle {
+  .show > .btn-outline-black.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-black.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-black {
     color: #FFFFFF;
     background-color: #111111;
     border-color: #111111; }
     .btn-outline-black:not(:disabled):not(.disabled):active:focus, .btn-outline-black:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-black.dropdown-toggle:focus {
+    .show > .btn-outline-black.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-black.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-black:focus {
       box-shadow: 0 0 0 0 rgba(17, 17, 17, 0.5); }
 
 .btn-outline-white {
@@ -2550,34 +2634,38 @@ fieldset:disabled a.btn {
     color: #FFFFFF;
     background-color: transparent; }
   .btn-outline-white:not(:disabled):not(.disabled):active, .btn-outline-white:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-white.dropdown-toggle {
+  .show > .btn-outline-white.dropdown-toggle,
+  form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-white.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-white {
     color: #4b4b4b;
     background-color: #FFFFFF;
     border-color: #FFFFFF; }
     .btn-outline-white:not(:disabled):not(.disabled):active:focus, .btn-outline-white:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-white.dropdown-toggle:focus {
+    .show > .btn-outline-white.dropdown-toggle:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > span.btn-outline-white.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > bdi.btn-outline-white:focus {
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); }
 
-.btn-link {
+.btn-link, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi {
   font-weight: 400;
   color: #C98F39;
   text-decoration: none; }
-  .btn-link:hover {
+  .btn-link:hover, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:hover, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:hover {
     color: #8f6527;
     text-decoration: underline; }
-  .btn-link:focus, .btn-link.focus {
+  .btn-link:focus, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:focus, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:focus, .btn-link.focus, form.variations_form.cart table.variations tbody tr td.value span.focus.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.focus {
     text-decoration: underline; }
-  .btn-link:disabled, .btn-link.disabled {
+  .btn-link:disabled, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:disabled, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:disabled, .btn-link.disabled, form.variations_form.cart table.variations tbody tr td.value span.disabled.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.disabled {
     color: #b4b4b4;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, form.variations_form.cart table.variations tbody tr td.value .btn-group-lg > span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-lg > bdi {
   padding: 1.122rem 1.5rem;
   font-size: 1.0625rem;
   line-height: 1.6;
   border-radius: 0; }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, form.variations_form.cart table.variations tbody tr td.value .btn-group-sm > span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-sm > bdi {
   padding: 0.5625rem 1rem;
   font-size: 1.0625rem;
   line-height: 1.6;
@@ -2624,9 +2712,9 @@ input[type="button"].btn-block {
 .dropleft {
   position: relative; }
 
-.dropdown-toggle {
+.dropdown-toggle, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi {
   white-space: nowrap; }
-  .dropdown-toggle::after {
+  .dropdown-toggle::after, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::after {
     display: inline-block;
     margin-left: 0.255em;
     vertical-align: 0.255em;
@@ -2635,7 +2723,7 @@ input[type="button"].btn-block {
     border-right: 0.3em solid transparent;
     border-bottom: 0;
     border-left: 0.3em solid transparent; }
-  .dropdown-toggle:empty::after {
+  .dropdown-toggle:empty::after, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:empty::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:empty::after {
     margin-left: 0; }
 
 .dropdown-menu {
@@ -2704,7 +2792,7 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-bottom: 0; }
 
-.dropup .dropdown-toggle::after {
+.dropup .dropdown-toggle::after, .dropup form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .dropup span.leftInStockTableRow::after, .dropup form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropup bdi::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -2714,7 +2802,7 @@ input[type="button"].btn-block {
   border-bottom: 0.3em solid;
   border-left: 0.3em solid transparent; }
 
-.dropup .dropdown-toggle:empty::after {
+.dropup .dropdown-toggle:empty::after, .dropup form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:empty::after, form.variations_form.cart table.variations tbody tr td.value .dropup span.leftInStockTableRow:empty::after, .dropup form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:empty::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropup bdi:empty::after {
   margin-left: 0; }
 
 .dropright .dropdown-menu {
@@ -2724,7 +2812,7 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-left: 0; }
 
-.dropright .dropdown-toggle::after {
+.dropright .dropdown-toggle::after, .dropright form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .dropright span.leftInStockTableRow::after, .dropright form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropright bdi::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -2734,10 +2822,10 @@ input[type="button"].btn-block {
   border-bottom: 0.3em solid transparent;
   border-left: 0.3em solid; }
 
-.dropright .dropdown-toggle:empty::after {
+.dropright .dropdown-toggle:empty::after, .dropright form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:empty::after, form.variations_form.cart table.variations tbody tr td.value .dropright span.leftInStockTableRow:empty::after, .dropright form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:empty::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropright bdi:empty::after {
   margin-left: 0; }
 
-.dropright .dropdown-toggle::after {
+.dropright .dropdown-toggle::after, .dropright form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .dropright span.leftInStockTableRow::after, .dropright form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropright bdi::after {
   vertical-align: 0; }
 
 .dropleft .dropdown-menu {
@@ -2747,16 +2835,16 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-right: 0; }
 
-.dropleft .dropdown-toggle::after {
+.dropleft .dropdown-toggle::after, .dropleft form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .dropleft span.leftInStockTableRow::after, .dropleft form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropleft bdi::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: ""; }
 
-.dropleft .dropdown-toggle::after {
+.dropleft .dropdown-toggle::after, .dropleft form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .dropleft span.leftInStockTableRow::after, .dropleft form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropleft bdi::after {
   display: none; }
 
-.dropleft .dropdown-toggle::before {
+.dropleft .dropdown-toggle::before, .dropleft form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::before, form.variations_form.cart table.variations tbody tr td.value .dropleft span.leftInStockTableRow::before, .dropleft form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::before, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropleft bdi::before {
   display: inline-block;
   margin-right: 0.255em;
   vertical-align: 0.255em;
@@ -2765,10 +2853,10 @@ input[type="button"].btn-block {
   border-right: 0.3em solid;
   border-bottom: 0.3em solid transparent; }
 
-.dropleft .dropdown-toggle:empty::after {
+.dropleft .dropdown-toggle:empty::after, .dropleft form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:empty::after, form.variations_form.cart table.variations tbody tr td.value .dropleft span.leftInStockTableRow:empty::after, .dropleft form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:empty::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropleft bdi:empty::after {
   margin-left: 0; }
 
-.dropleft .dropdown-toggle::before {
+.dropleft .dropdown-toggle::before, .dropleft form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::before, form.variations_form.cart table.variations tbody tr td.value .dropleft span.leftInStockTableRow::before, .dropleft form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::before, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropleft bdi::before {
   vertical-align: 0; }
 
 .dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"] {
@@ -2781,7 +2869,7 @@ input[type="button"].btn-block {
   overflow: hidden;
   border-top: 1px solid #f6f6f6; }
 
-.dropdown-item {
+.dropdown-item, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label {
   display: block;
   width: 100%;
   padding: 0 1.75rem;
@@ -2792,15 +2880,15 @@ input[type="button"].btn-block {
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
-  .dropdown-item:hover, .dropdown-item:focus {
+  .dropdown-item:hover, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label:hover, .dropdown-item:focus, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label:focus {
     color: #C98F39;
     text-decoration: none;
     background-color: none; }
-  .dropdown-item.active, .dropdown-item:active {
+  .dropdown-item.active, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label.active, .dropdown-item:active, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label:active {
     color: #C98F39;
     text-decoration: none;
     background-color: none; }
-  .dropdown-item.disabled, .dropdown-item:disabled {
+  .dropdown-item.disabled, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label.disabled, .dropdown-item:disabled, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label:disabled {
     color: #b4b4b4;
     pointer-events: none;
     background-color: transparent; }
@@ -2827,18 +2915,28 @@ input[type="button"].btn-block {
   display: -webkit-inline-box;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn,
-  .btn-group-vertical > .btn {
+  .btn-group > .btn, form.variations_form.cart table.variations tbody tr td.value .btn-group > span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > bdi,
+  .btn-group-vertical > .btn,
+  form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi {
     position: relative;
     -webkit-box-flex: 1;
             flex: 1 1 auto; }
-    .btn-group > .btn:hover,
-    .btn-group-vertical > .btn:hover {
+    .btn-group > .btn:hover, form.variations_form.cart table.variations tbody tr td.value .btn-group > span.leftInStockTableRow:hover, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > bdi:hover,
+    .btn-group-vertical > .btn:hover,
+    form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.leftInStockTableRow:hover,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+    .btn-group > .btn:focus, form.variations_form.cart table.variations tbody tr td.value .btn-group > span.leftInStockTableRow:focus, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > bdi:focus, .btn-group > .btn:active, form.variations_form.cart table.variations tbody tr td.value .btn-group > span.leftInStockTableRow:active, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > bdi:active, .btn-group > .btn.active, form.variations_form.cart table.variations tbody tr td.value .btn-group > span.active.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > bdi.active,
     .btn-group-vertical > .btn:focus,
+    form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi:focus,
     .btn-group-vertical > .btn:active,
-    .btn-group-vertical > .btn.active {
+    form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.leftInStockTableRow:active,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi:active,
+    .btn-group-vertical > .btn.active,
+    form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.active.leftInStockTableRow,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi.active {
       z-index: 1; }
 
 .btn-toolbar {
@@ -2850,17 +2948,21 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child),
+.btn-group > .btn:not(:first-child), form.variations_form.cart table.variations tbody tr td.value .btn-group > span.leftInStockTableRow:not(:first-child), form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > bdi:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn-group:not(:last-child) > .btn {
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), form.variations_form.cart table.variations tbody tr td.value .btn-group > span.leftInStockTableRow:not(:last-child):not(.dropdown-toggle), form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > bdi:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-group:not(:last-child) > .btn,
+form.variations_form.cart table.variations tbody tr td.value .btn-group > .btn-group:not(:last-child) > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > .btn-group:not(:last-child) > bdi {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child),
-.btn-group > .btn-group:not(:first-child) > .btn {
+.btn-group > .btn:not(:first-child), form.variations_form.cart table.variations tbody tr td.value .btn-group > span.leftInStockTableRow:not(:first-child), form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > bdi:not(:first-child),
+.btn-group > .btn-group:not(:first-child) > .btn,
+form.variations_form.cart table.variations tbody tr td.value .btn-group > .btn-group:not(:first-child) > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group > .btn-group:not(:first-child) > bdi {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2874,17 +2976,17 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, form.variations_form.cart table.variations tbody tr td.value .btn-group-sm > span.leftInStockTableRow + .dropdown-toggle-split, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-sm > bdi + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, form.variations_form.cart table.variations tbody tr td.value .btn-group-lg > span.leftInStockTableRow + .dropdown-toggle-split, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-lg > bdi + .dropdown-toggle-split {
   padding-right: 1.125rem;
   padding-left: 1.125rem; }
 
-.btn-group.show .dropdown-toggle {
+.btn-group.show .dropdown-toggle, .btn-group.show form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .btn-group.show span.leftInStockTableRow, .btn-group.show form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group.show bdi {
   box-shadow: none; }
-  .btn-group.show .dropdown-toggle.btn-link {
+  .btn-group.show .dropdown-toggle.btn-link, .btn-group.show form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .btn-group.show span.leftInStockTableRow, .btn-group.show form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group.show bdi {
     box-shadow: none; }
 
 .btn-group-vertical {
@@ -2895,28 +2997,43 @@ input[type="button"].btn-block {
           align-items: flex-start;
   -webkit-box-pack: center;
           justify-content: center; }
+  
   .btn-group-vertical > .btn,
+  form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.leftInStockTableRow:not(:first-child), form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-  .btn-group-vertical > .btn-group:not(:last-child) > .btn {
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.leftInStockTableRow:not(:last-child):not(.dropdown-toggle), form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi:not(:last-child):not(.dropdown-toggle),
+  .btn-group-vertical > .btn-group:not(:last-child) > .btn,
+  form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > .btn-group:not(:last-child) > span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > .btn-group:not(:last-child) > bdi {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:not(:first-child),
-  .btn-group-vertical > .btn-group:not(:first-child) > .btn {
+  .btn-group-vertical > .btn:not(:first-child), form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > span.leftInStockTableRow:not(:first-child), form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > bdi:not(:first-child),
+  .btn-group-vertical > .btn-group:not(:first-child) > .btn,
+  form.variations_form.cart table.variations tbody tr td.value .btn-group-vertical > .btn-group:not(:first-child) > span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-vertical > .btn-group:not(:first-child) > bdi {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn,
-.btn-group-toggle > .btn-group > .btn {
+.btn-group-toggle > .btn, form.variations_form.cart table.variations tbody tr td.value .btn-group-toggle > span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-toggle > bdi,
+.btn-group-toggle > .btn-group > .btn,
+form.variations_form.cart table.variations tbody tr td.value .btn-group-toggle > .btn-group > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-toggle > .btn-group > bdi {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], form.variations_form.cart table.variations tbody tr td.value .btn-group-toggle > span.leftInStockTableRow input[type="radio"], form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-toggle > bdi input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
+  form.variations_form.cart table.variations tbody tr td.value .btn-group-toggle > span.leftInStockTableRow input[type="checkbox"],
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-toggle > bdi input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
-  .btn-group-toggle > .btn-group > .btn input[type="checkbox"] {
+  form.variations_form.cart table.variations tbody tr td.value .btn-group-toggle > .btn-group > span.leftInStockTableRow input[type="radio"],
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-toggle > .btn-group > bdi input[type="radio"],
+  .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
+  form.variations_form.cart table.variations tbody tr td.value .btn-group-toggle > .btn-group > span.leftInStockTableRow input[type="checkbox"],
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-toggle > .btn-group > bdi input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
@@ -2983,21 +3100,62 @@ input[type="button"].btn-block {
 .input-group-append {
   display: -webkit-box;
   display: flex; }
-  .input-group-prepend .btn,
-  .input-group-append .btn {
+  .input-group-prepend .btn, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .input-group-prepend span.leftInStockTableRow, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend bdi,
+  .input-group-append .btn,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-append span.leftInStockTableRow,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append bdi {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus,
-    .input-group-append .btn:focus {
+    .input-group-prepend .btn:focus, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:focus, form.variations_form.cart table.variations tbody tr td.value .input-group-prepend span.leftInStockTableRow:focus, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:focus, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend bdi:focus,
+    .input-group-append .btn:focus,
+    .input-group-append form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:focus,
+    form.variations_form.cart table.variations tbody tr td.value .input-group-append span.leftInStockTableRow:focus,
+    .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append bdi:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn,
+  .input-group-prepend .btn + .btn, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow + .btn, form.variations_form.cart table.variations tbody tr td.value .input-group-prepend span.leftInStockTableRow + .btn, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi + .btn, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend bdi + .btn, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .btn + span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .input-group-prepend .btn + span.leftInStockTableRow, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow + span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .input-group-prepend span.leftInStockTableRow + span.leftInStockTableRow, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi + span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend bdi + span.leftInStockTableRow, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn + bdi, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend .btn + bdi, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount span.leftInStockTableRow + bdi, form.variations_form.cart table.variations tbody tr td.value .input-group-prepend .woocommerce-Price-amount.amount span.leftInStockTableRow + bdi, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend span.leftInStockTableRow + bdi, .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi + bdi, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend bdi + bdi,
   .input-group-prepend .btn + .input-group-text,
+  .input-group-prepend form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow + .input-group-text,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-prepend span.leftInStockTableRow + .input-group-text,
+  .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi + .input-group-text,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend bdi + .input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .btn,
+  .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .input-group-text + span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-prepend .input-group-text + span.leftInStockTableRow,
+  .input-group-prepend form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-text + bdi,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-prepend .input-group-text + bdi,
   .input-group-append .btn + .btn,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow + .btn,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-append span.leftInStockTableRow + .btn,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi + .btn,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append bdi + .btn,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .btn + span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-append .btn + span.leftInStockTableRow,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow + span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-append span.leftInStockTableRow + span.leftInStockTableRow,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi + span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append bdi + span.leftInStockTableRow,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn + bdi,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append .btn + bdi,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount span.leftInStockTableRow + bdi,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-append .woocommerce-Price-amount.amount span.leftInStockTableRow + bdi,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append span.leftInStockTableRow + bdi,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi + bdi,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append bdi + bdi,
   .input-group-append .btn + .input-group-text,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow + .input-group-text,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-append span.leftInStockTableRow + .input-group-text,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi + .input-group-text,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append bdi + .input-group-text,
   .input-group-append .input-group-text + .input-group-text,
-  .input-group-append .input-group-text + .btn {
+  .input-group-append .input-group-text + .btn,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .input-group-text + span.leftInStockTableRow,
+  form.variations_form.cart table.variations tbody tr td.value .input-group-append .input-group-text + span.leftInStockTableRow,
+  .input-group-append form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-text + bdi,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-append .input-group-text + bdi {
     margin-left: -1px; }
 
 .input-group-prepend {
@@ -3035,7 +3193,11 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
-.input-group-lg > .input-group-append > .btn {
+form.variations_form.cart table.variations tbody tr td.value .input-group-lg > .input-group-prepend > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-lg > .input-group-prepend > bdi,
+.input-group-lg > .input-group-append > .btn,
+form.variations_form.cart table.variations tbody tr td.value .input-group-lg > .input-group-append > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-lg > .input-group-append > bdi {
   padding: 1.122rem 1.5rem;
   font-size: 1.0625rem;
   line-height: 1.6;
@@ -3050,7 +3212,11 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
-.input-group-sm > .input-group-append > .btn {
+form.variations_form.cart table.variations tbody tr td.value .input-group-sm > .input-group-prepend > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-sm > .input-group-prepend > bdi,
+.input-group-sm > .input-group-append > .btn,
+form.variations_form.cart table.variations tbody tr td.value .input-group-sm > .input-group-append > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group-sm > .input-group-append > bdi {
   padding: 0.5625rem 1rem;
   font-size: 1.0625rem;
   line-height: 1.6;
@@ -3060,20 +3226,28 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 3.25rem; }
 
-.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .btn, form.variations_form.cart table.variations tbody tr td.value .input-group > .input-group-prepend > span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group > .input-group-prepend > bdi,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
+form.variations_form.cart table.variations tbody tr td.value .input-group > .input-group-append:not(:last-child) > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group > .input-group-append:not(:last-child) > bdi,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+form.variations_form.cart table.variations tbody tr td.value .input-group > .input-group-append:last-child > span.leftInStockTableRow:not(:last-child):not(.dropdown-toggle),
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group > .input-group-append:last-child > bdi:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .btn, form.variations_form.cart table.variations tbody tr td.value .input-group > .input-group-append > span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group > .input-group-append > bdi,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
+form.variations_form.cart table.variations tbody tr td.value .input-group > .input-group-prepend:not(:first-child) > span.leftInStockTableRow,
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group > .input-group-prepend:not(:first-child) > bdi,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+form.variations_form.cart table.variations tbody tr td.value .input-group > .input-group-prepend:first-child > span.leftInStockTableRow:not(:first-child),
+form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .input-group > .input-group-prepend:first-child > bdi:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -4117,7 +4291,7 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge {
+.btn .badge, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow .badge, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi .badge {
   position: relative;
   top: -1px; }
 
@@ -6804,7 +6978,7 @@ button.bg-white:focus {
 .py-0 {
   padding-top: 0 !important; }
 
-.pr-0,
+.pr-0, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi,
 .px-0 {
   padding-right: 0 !important; }
 
@@ -10379,7 +10553,7 @@ button.bg-white:focus {
 .text-lowercase {
   text-transform: lowercase !important; }
 
-.text-uppercase {
+.text-uppercase, form.variations_form.cart table.variations tbody tr td.label label {
   text-transform: uppercase !important; }
 
 .text-capitalize {
@@ -10843,14 +11017,14 @@ a.text-white:hover, a.text-white:focus {
   .breadcrumb-scroll::-webkit-scrollbar {
     display: none; }
 
-.btn > img {
+.btn > img, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow > img, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi > img {
   max-height: 1em;
   width: auto; }
 
-.btn:not([class*="btn-outline"]) {
+.btn:not([class*="btn-outline"]), form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:not([class*="btn-outline"]), form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:not([class*="btn-outline"]) {
   border-color: transparent !important; }
 
-.btn-xs {
+.btn-xs, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi {
   padding: 0.25rem 0.625rem;
   font-size: 0.9375rem; }
 
@@ -11049,15 +11223,15 @@ a.text-white:hover, a.text-white:focus {
   line-height: 1;
   width: 1em; }
 
-.btn-rounded-circle.btn-lg, .btn-group-lg > .btn-rounded-circle.btn {
+.btn-rounded-circle.btn-lg, .btn-group-lg > .btn-rounded-circle.btn, form.variations_form.cart table.variations tbody tr td.value .btn-group-lg > span.btn-rounded-circle.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-lg > bdi.btn-rounded-circle {
   padding-left: 1.122rem;
   padding-right: 1.122rem; }
 
-.btn-rounded-circle.btn-sm, .btn-group-sm > .btn-rounded-circle.btn {
+.btn-rounded-circle.btn-sm, .btn-group-sm > .btn-rounded-circle.btn, form.variations_form.cart table.variations tbody tr td.value .btn-group-sm > span.btn-rounded-circle.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .btn-group-sm > bdi.btn-rounded-circle {
   padding-left: 0.5625rem;
   padding-right: 0.5625rem; }
 
-.btn-rounded-circle.btn-xs {
+.btn-rounded-circle.btn-xs, form.variations_form.cart table.variations tbody tr td.value span.btn-rounded-circle.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.btn-rounded-circle {
   padding-left: 0.25rem;
   padding-right: 0.25rem; }
 
@@ -11295,15 +11469,15 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   padding-left: 1.75rem;
   padding-right: 1.75rem; }
 
-.dropdown-item {
+.dropdown-item, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label {
   width: auto;
   min-width: 100%;
   margin-left: -1.75rem;
   margin-right: -1.75rem; }
-  .dropdown-item:hover, .dropdown-item:focus {
+  .dropdown-item:hover, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label:hover, .dropdown-item:focus, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label:focus {
     outline: none; }
 
-.dropdown-item + .dropdown-item {
+.dropdown-item + .dropdown-item, form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label + .dropdown-item, form.variations_form.cart table.variations tbody tr td.value input.dropdown-item[type="radio"] + label {
   margin-top: 0.45rem; }
 
 .dropdown-link {
@@ -11324,13 +11498,13 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   text-transform: uppercase;
   letter-spacing: .08em; }
 
-.dropdown-toggle::after {
+.dropdown-toggle::after, form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi::after {
   font-family: "Feather";
   vertical-align: middle;
   border: none !important;
   content: "\e92e"; }
 
-.dropright > .dropdown-toggle::after {
+.dropright > .dropdown-toggle::after, form.variations_form.cart table.variations tbody tr td.value .dropright > span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropright > bdi::after {
   content: "\e930"; }
 
 .dropdown-menu-xs {
@@ -11350,7 +11524,7 @@ a.card, a.card-body, a.card-footer, a.card-meta {
 .dropdown-menu-xl {
   padding: 2.375rem 2.5rem; }
 
-.dropdown-menu-lg .dropdown-item,
+.dropdown-menu-lg .dropdown-item, .dropdown-menu-lg form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label, form.variations_form.cart table.variations tbody tr td.value .dropdown-menu-lg input[type="radio"] + label,
 .dropdown-menu-xl .dropdown-header {
   margin-left: -2.5rem;
   margin-right: -2.5rem;
@@ -11635,31 +11809,31 @@ a.card, a.card-body, a.card-footer, a.card-meta {
     padding-left: 0.5rem; } }
 
 @media (max-width: 991.98px) {
-  .navbar-collapse .navbar-nav .dropdown-item,
+  .navbar-collapse .navbar-nav .dropdown-item, .navbar-collapse .navbar-nav form.variations_form.cart table.variations tbody tr td.value input[type="radio"] + label, form.variations_form.cart table.variations tbody tr td.value .navbar-collapse .navbar-nav input[type="radio"] + label,
   .navbar-collapse .navbar-nav .dropdown-header {
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-right: 0; } }
 
-.navbar-nav .dropdown > .dropdown-toggle::after {
+.navbar-nav .dropdown > .dropdown-toggle::after, .navbar-nav form.variations_form.cart table.variations tbody tr td.value .dropdown > span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .navbar-nav .dropdown > span.leftInStockTableRow::after, .navbar-nav form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropdown > bdi::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .navbar-nav .dropdown > bdi::after {
   display: none; }
 
 @media (max-width: 991.98px) {
-  .navbar-collapse .navbar-nav .dropdown > .dropdown-toggle {
+  .navbar-collapse .navbar-nav .dropdown > .dropdown-toggle, .navbar-collapse .navbar-nav form.variations_form.cart table.variations tbody tr td.value .dropdown > span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .navbar-collapse .navbar-nav .dropdown > span.leftInStockTableRow, .navbar-collapse .navbar-nav form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropdown > bdi, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .navbar-collapse .navbar-nav .dropdown > bdi {
     margin-bottom: 1.5rem;
     pointer-events: none; } }
 
-.navbar-nav .dropright > .dropdown-toggle {
+.navbar-nav .dropright > .dropdown-toggle, .navbar-nav form.variations_form.cart table.variations tbody tr td.value .dropright > span.leftInStockTableRow, form.variations_form.cart table.variations tbody tr td.value .navbar-nav .dropright > span.leftInStockTableRow, .navbar-nav form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropright > bdi, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .navbar-nav .dropright > bdi {
   display: -webkit-box;
   display: flex; }
-  .navbar-nav .dropright > .dropdown-toggle::after {
+  .navbar-nav .dropright > .dropdown-toggle::after, .navbar-nav form.variations_form.cart table.variations tbody tr td.value .dropright > span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .navbar-nav .dropright > span.leftInStockTableRow::after, .navbar-nav form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropright > bdi::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .navbar-nav .dropright > bdi::after {
     margin-left: auto; }
 
 @media (max-width: 991.98px) {
-  .navbar-collapse .navbar-nav .dropright > .dropdown-toggle::after {
+  .navbar-collapse .navbar-nav .dropright > .dropdown-toggle::after, .navbar-collapse .navbar-nav form.variations_form.cart table.variations tbody tr td.value .dropright > span.leftInStockTableRow::after, form.variations_form.cart table.variations tbody tr td.value .navbar-collapse .navbar-nav .dropright > span.leftInStockTableRow::after, .navbar-collapse .navbar-nav form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropright > bdi::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .navbar-collapse .navbar-nav .dropright > bdi::after {
     content: "\e92e"; }
-  .navbar-collapse .navbar-nav .dropright > .dropdown-toggle[aria-expanded="true"]::after {
+  .navbar-collapse .navbar-nav .dropright > .dropdown-toggle[aria-expanded="true"]::after, .navbar-collapse .navbar-nav form.variations_form.cart table.variations tbody tr td.value .dropright > span.leftInStockTableRow[aria-expanded="true"]::after, form.variations_form.cart table.variations tbody tr td.value .navbar-collapse .navbar-nav .dropright > span.leftInStockTableRow[aria-expanded="true"]::after, .navbar-collapse .navbar-nav form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .dropright > bdi[aria-expanded="true"]::after, form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .navbar-collapse .navbar-nav .dropright > bdi[aria-expanded="true"]::after {
     -webkit-transform-origin: center center;
             transform-origin: center center;
     -webkit-transform: rotate(180deg);
@@ -11835,9 +12009,9 @@ h4, .h4 {
 h5, .h5 {
   line-height: 1.5; }
 
-h6, .h6 {
+h6, .h6, form.variations_form.cart table.variations tbody tr td.label label {
   line-height: 1.55; }
-  h6.text-uppercase, .h6.text-uppercase {
+  h6.text-uppercase, .h6.text-uppercase, form.variations_form.cart table.variations tbody tr td.label label {
     letter-spacing: .08em; }
 
 .display-1, .display-2, .display-3, .display-4 {
@@ -13723,19 +13897,33 @@ body.compensate-for-scrollbar {
     border-color: #C98F39; }
   .ql-tooltip .ql-action::before:not(:disabled):not(.disabled):active, .ql-tooltip .ql-action::before:not(:disabled):not(.disabled).active,
   .show > .ql-tooltip .ql-action::before.dropdown-toggle,
+  .show > .ql-tooltip form.variations_form.cart table.variations tbody tr td.value span.ql-action.leftInStockTableRow::before,
+  form.variations_form.cart table.variations tbody tr td.value .show > .ql-tooltip span.ql-action.leftInStockTableRow::before,
+  .show > .ql-tooltip form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.ql-action::before,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > .ql-tooltip bdi.ql-action::before,
   .ql-tooltip.ql-editing .ql-action::before:not(:disabled):not(.disabled):active,
   .ql-tooltip.ql-editing .ql-action::before:not(:disabled):not(.disabled).active,
-  .show >
-  .ql-tooltip.ql-editing .ql-action::before.dropdown-toggle {
+  .show > .ql-tooltip.ql-editing .ql-action::before.dropdown-toggle,
+  .show > .ql-tooltip.ql-editing form.variations_form.cart table.variations tbody tr td.value span.ql-action.leftInStockTableRow::before,
+  form.variations_form.cart table.variations tbody tr td.value .show > .ql-tooltip.ql-editing span.ql-action.leftInStockTableRow::before,
+  .show > .ql-tooltip.ql-editing form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.ql-action::before,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > .ql-tooltip.ql-editing bdi.ql-action::before {
     color: #FFFFFF;
     background-color: #a3732c;
     border-color: #996c2a; }
     .ql-tooltip .ql-action::before:not(:disabled):not(.disabled):active:focus, .ql-tooltip .ql-action::before:not(:disabled):not(.disabled).active:focus,
     .show > .ql-tooltip .ql-action::before.dropdown-toggle:focus,
+    .show > .ql-tooltip form.variations_form.cart table.variations tbody tr td.value span.ql-action.leftInStockTableRow::before:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > .ql-tooltip span.ql-action.leftInStockTableRow::before:focus,
+    .show > .ql-tooltip form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.ql-action::before:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > .ql-tooltip bdi.ql-action::before:focus,
     .ql-tooltip.ql-editing .ql-action::before:not(:disabled):not(.disabled):active:focus,
     .ql-tooltip.ql-editing .ql-action::before:not(:disabled):not(.disabled).active:focus,
-    .show >
-    .ql-tooltip.ql-editing .ql-action::before.dropdown-toggle:focus {
+    .show > .ql-tooltip.ql-editing .ql-action::before.dropdown-toggle:focus,
+    .show > .ql-tooltip.ql-editing form.variations_form.cart table.variations tbody tr td.value span.ql-action.leftInStockTableRow::before:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > .ql-tooltip.ql-editing span.ql-action.leftInStockTableRow::before:focus,
+    .show > .ql-tooltip.ql-editing form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.ql-action::before:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > .ql-tooltip.ql-editing bdi.ql-action::before:focus {
       box-shadow: 0 0 0 0 rgba(182, 133, 60, 0.5); }
 
 .ql-tooltip .ql-action::before {
@@ -13765,12 +13953,20 @@ body.compensate-for-scrollbar {
     background-color: #FFFFFF;
     border-color: #FFFFFF; }
   .ql-tooltip .ql-remove::before:not(:disabled):not(.disabled):active, .ql-tooltip .ql-remove::before:not(:disabled):not(.disabled).active,
-  .show > .ql-tooltip .ql-remove::before.dropdown-toggle {
+  .show > .ql-tooltip .ql-remove::before.dropdown-toggle,
+  .show > .ql-tooltip form.variations_form.cart table.variations tbody tr td.value span.ql-remove.leftInStockTableRow::before,
+  form.variations_form.cart table.variations tbody tr td.value .show > .ql-tooltip span.ql-remove.leftInStockTableRow::before,
+  .show > .ql-tooltip form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.ql-remove::before,
+  form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > .ql-tooltip bdi.ql-remove::before {
     color: #4b4b4b;
     background-color: #e6e6e6;
     border-color: #dfdfdf; }
     .ql-tooltip .ql-remove::before:not(:disabled):not(.disabled):active:focus, .ql-tooltip .ql-remove::before:not(:disabled):not(.disabled).active:focus,
-    .show > .ql-tooltip .ql-remove::before.dropdown-toggle:focus {
+    .show > .ql-tooltip .ql-remove::before.dropdown-toggle:focus,
+    .show > .ql-tooltip form.variations_form.cart table.variations tbody tr td.value span.ql-remove.leftInStockTableRow::before:focus,
+    form.variations_form.cart table.variations tbody tr td.value .show > .ql-tooltip span.ql-remove.leftInStockTableRow::before:focus,
+    .show > .ql-tooltip form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi.ql-remove::before:focus,
+    form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount .show > .ql-tooltip bdi.ql-remove::before:focus {
       box-shadow: 0 0 0 0 rgba(228, 228, 228, 0.5); }
 
 .ql-tooltip.ql-editing .ql-remove::before {
@@ -13991,3 +14187,41 @@ body.compensate-for-scrollbar {
   bottom: 0;
   left: 0;
   z-index: 9; }
+
+form.variations_form.cart {
+  width: 100%; }
+  form.variations_form.cart table.variations {
+    width: 100%;
+    display: -webkit-box;
+    display: flex; }
+    form.variations_form.cart table.variations .reset_variations {
+      display: none !important; }
+    form.variations_form.cart table.variations tbody {
+      width: 100%;
+      display: -webkit-box;
+      display: flex; }
+      form.variations_form.cart table.variations tbody tr {
+        width: 100%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+                justify-content: space-between; }
+        form.variations_form.cart table.variations tbody tr td.value input[type="radio"] {
+          opacity: 0; }
+          form.variations_form.cart table.variations tbody tr td.value input[type="radio"]:checked + label {
+            color: #dfa349; }
+        form.variations_form.cart table.variations tbody tr td.value .dropdown-menu > div {
+          display: -webkit-box;
+          display: flex; }
+          form.variations_form.cart table.variations tbody tr td.value .dropdown-menu > div label {
+            white-space: nowrap; }
+        form.variations_form.cart table.variations tbody tr td.value .woocommerce-variation-availability {
+          display: none !important; }
+        form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow {
+          color: #8d8d8d !important; }
+          form.variations_form.cart table.variations tbody tr td.value span.leftInStockTableRow:after {
+            display: none !important; }
+        form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi {
+          color: #dfa349 !important; }
+          form.variations_form.cart table.variations tbody tr td.value .woocommerce-Price-amount.amount bdi:after {
+            display: none !important; }
