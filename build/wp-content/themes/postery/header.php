@@ -18,9 +18,6 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
-
 	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/apple-icon-72x72.png">
@@ -39,22 +36,7 @@
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap" rel="stylesheet">
-
-	<!-- Libs CSS -->
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/fonts/Feather/feather.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/aos/dist/aos.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/choices.js/public/assets/styles/choices.min.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/flickity-fade/flickity-fade.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/flickity/dist/flickity.min.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/highlightjs/styles/vs2015.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/jarallax/dist/jarallax.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/quill/dist/quill.core.css" />
-
-	<!-- Theme CSS -->
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/theme.min.css">
-
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class('pt-10 pt-md-0'); ?> style="overflow: visible;">

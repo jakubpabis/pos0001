@@ -32,32 +32,9 @@ global $product;
 					<?php echo strip_tags(get_the_content()); ?>
 				</p>
 
-
-
-				<ul class="list-group list-group-flush mt-6 mb-8 variations d-none">
-					<li class="list-group-item pb-4">
-						<!-- Heading -->
-						<div class="d-flex align-items-center">
-							<h6 class="mb-0 text-uppercase">
-								Choose the size
-							</h6>
-							<div class="dropdown show ml-auto mt-n1">
-								<a class="btn btn-xs btn-link dropdown-toggle pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									35 &times; 50 cm
-								</a>
-								<div class="dropdown-menu dropdown-menu-xs dropdown-menu-right text-right" aria-labelledby="dropdownMenuLink">
-									<a class="dropdown-item" href="#">50 &times; 70 cm</a>
-									<a class="dropdown-item" href="#">70 &times; 100 cm</a>
-								</div>
-							</div>
-						</div>
-
-					</li>
-				</ul>
-
 				<?php do_action('woocommerce_single_product_summary'); ?>
 
-				<div class="leftInStockAmount d-none"><?php echo $product->get_stock_quantity(); ?> out of 7</div>
+				<div class="leftInStockAmount d-none"><?php echo $product->get_stock_quantity(); ?> out of <?php echo get_field('max_stock'); ?></div>
 
 				<div class="d-flex justify-content-between addToCartContainer">
 
@@ -117,7 +94,7 @@ global $product;
 	</div>
 </div>
 
-<?php $array = wc_get_related_products($product->get_id(), 3, $product->get_id()); ?>
+<?php /* $array = wc_get_related_products($product->get_id(), 3, $product->get_id()); ?>
 <?php if (isset($array) && !empty($array)) : ?>
 	<?php if (($key = array_search($product->get_id(), $array)) !== false) {
 		unset($array[$key]);
@@ -188,7 +165,155 @@ global $product;
 			</div> <!-- / .container -->
 		</section>
 	<?php endif; ?>
-<?php endif; ?>
+<?php endif; */ ?>
+
+
+<!-- FEATURES
+    ================================================== -->
+<section class="py-8 py-md-11 bg-light">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-8 text-center">
+
+				<!-- Heading -->
+				<h2>
+					<span class="text-primary">Everything</span> you need to know about our posters.
+				</h2>
+
+				<!-- Text -->
+				<p class="font-size-lg text-muted mb-7 mb-md-9 px-md-9">
+					We make sure to bring you the best quality posters!<br />
+					If you wonder how we handle the posters and how we made them, you can find the answers below.
+				</p>
+
+			</div>
+		</div> <!-- / .row -->
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-8">
+
+				<!-- Card -->
+				<div class="card accordion" id="featuresAccordion">
+					<div class="card-body">
+
+						<!-- List group -->
+						<div class="list-group list-group-flush">
+							<div class="list-group-item">
+
+								<!-- Toggle -->
+								<a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresOne" role="button" aria-expanded="true" aria-controls="featuresOne">
+									<div class="mr-auto">
+
+										<!-- Title -->
+										<p class="font-weight-bold mb-0">
+											One of a kind and limited.
+										</p>
+
+										<!-- Text -->
+										<p class="font-size-sm text-muted mb-0">
+											You’ll not see your poster in a friend’s house!
+										</p>
+
+									</div>
+
+									<!-- Chevron -->
+									<span class="collapse-chevron text-muted ml-4">
+										<i class="fe fe-lg fe-chevron-down"></i>
+									</span>
+
+								</a> <!-- / .row -->
+
+								<!-- Collapse -->
+								<div class="collapse show" id="featuresOne" data-parent="#featuresAccordion">
+									<div class="py-5 py-mb-6">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+										</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="list-group-item">
+
+								<!-- Toggle -->
+								<a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresTwo" role="button" aria-expanded="false" aria-controls="featuresTwo">
+									<div class="mr-auto">
+
+										<!-- Title -->
+										<p class="font-weight-bold mb-0">
+											Snacks, drinks, coffee, and more.
+										</p>
+
+										<!-- Text -->
+										<p class="font-size-sm text-muted mb-0">
+											Keep your engine going with free food and drinks.
+										</p>
+
+									</div>
+
+									<!-- Chevron -->
+									<span class="collapse-chevron text-muted ml-4">
+										<i class="fe fe-lg fe-chevron-down"></i>
+									</span>
+
+								</a> <!-- / .row -->
+
+								<!-- Collapse -->
+								<div class="collapse" id="featuresTwo" data-parent="#featuresAccordion">
+									<div class="py-5 py-md-6">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+										</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="list-group-item">
+
+								<!-- Toggle -->
+								<a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresThree" role="button" aria-expanded="false" aria-controls="featuresThree">
+									<div class="mr-auto">
+
+										<!-- Title -->
+										<p class="font-weight-bold mb-0">
+											On site tech support
+										</p>
+
+										<!-- Text -->
+										<p class="font-size-sm text-muted mb-0">
+											Connectivity, power, and IT issues solved in no time.
+										</p>
+
+									</div>
+
+									<!-- Chevron -->
+									<span class="collapse-chevron text-muted ml-4">
+										<i class="fe fe-lg fe-chevron-down"></i>
+									</span>
+
+								</a> <!-- / .row -->
+
+								<!-- Collapse -->
+								<div class="collapse" id="featuresThree" data-parent="#featuresAccordion">
+									<div class="py-5 py-md-6">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+										</p>
+										<a href="#!" class="font-weight-bold text-decoration-none">
+											Check it out <i class="fe fe-arrow-right ml-3"></i>
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div> <!-- / .row -->
+	</div> <!-- / .container -->
+</section>
 
 <?php
-get_footer();
+get_footer('dark');

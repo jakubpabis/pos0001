@@ -163,7 +163,7 @@ $home_products = new WP_Query($args);
 							</h6>
 
 							<h6 class="mb-2 text-muted">
-								Left in stock: <span class="text-gray-800"><?php echo $product->get_stock_quantity(); ?> out of 10</span>
+								Left in stock: <span class="text-gray-800"><?php echo $product->get_stock_quantity(); ?> out of <?php echo get_field('max_stock'); ?></span>
 							</h6>
 
 							<!-- Button -->
@@ -174,9 +174,9 @@ $home_products = new WP_Query($args);
 									Learn more
 								</a>
 
-								<a href="!#" class="btn btn-sm btn-primary text-white lift font-weight-bolder">
-									<i class="fe fe-shopping-cart mr-2"></i>
-									Add to cart
+								<a href="<?php echo get_the_permalink(); ?>" class="btn btn-sm btn-primary text-white lift font-weight-bolder">
+									<i class="fe fe-maximize-2 mr-2"></i>
+									Choose size
 								</a>
 
 							</div>
@@ -188,7 +188,7 @@ $home_products = new WP_Query($args);
 
 						<?php $even === true ? $class = 'position-relative h-100 vw-75 bg-cover float-right' : $class = 'position-relative h-100 vw-75 bg-cover right'; ?>
 						<!-- Image -->
-						<div class="<?php echo $class; ?>" data-jarallax data-speed=".8" style="background-image: url('<?php echo get_field('mockup')['url']; ?>');">
+						<div class="<?php echo $class; ?>" data-jarallax data-speed=".8" style="background-image: url('<?php echo get_field('in_situ')['url']; ?>');">
 
 							<?php if ($even) : ?>
 								<!-- Shape -->

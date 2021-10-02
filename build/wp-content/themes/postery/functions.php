@@ -10,7 +10,7 @@
 
 if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define('_S_VERSION', '1.0.1');
+	define('_S_VERSION', '1.0.5');
 }
 
 if (!function_exists('postery_setup')) :
@@ -146,21 +146,6 @@ function remove_admin_bar()
 	show_admin_bar(false);
 }
 
-//Remove Gutenberg Block Library CSS from loading on the frontend
-function smartwp_remove_wp_block_library_css()
-{
-	wp_dequeue_style('wp-block-library');
-	wp_dequeue_style('wp-block-library-theme');
-}
-add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css');
-
-add_action('wp_enqueue_scripts', function () {
-	if (!is_admin()) {
-		wp_deregister_script('wp-embed');
-		wp_deregister_script('wp-emoji');
-	}
-});
-
 remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('wp_print_styles', 'print_emoji_styles');
@@ -171,16 +156,36 @@ remove_action('admin_print_styles', 'print_emoji_styles');
  */
 function postery_scripts()
 {
-	//wp_enqueue_style( 'postery-style', get_stylesheet_uri(), array(), _S_VERSION );
-	//wp_style_add_data( 'postery-style', 'rtl', 'replace' );
+	if (!is_admin()) {
+		wp_deregister_script('wp-embed');
+		wp_deregister_script('wp-emoji');
+	}
+	wp_dequeue_style('wp-block-library');
+	wp_dequeue_style('wp-block-library-theme');
 
-	//wp_enqueue_script( 'postery-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_style('postery-fonts', 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-feather', get_template_directory_uri() . '/assets/fonts/Feather/feather.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-fancybox', get_template_directory_uri() . '/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-aos', get_template_directory_uri() . '/assets/libs/aos/dist/aos.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-choices', get_template_directory_uri() . '/assets/libs/choices.js/public/assets/styles/choices.min.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-flickity-fade', get_template_directory_uri() . '/assets/libs/flickity-fade/flickity-fade.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-flickity', get_template_directory_uri() . '/assets/libs/flickity/dist/flickity.min.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-highlight', get_template_directory_uri() . '/assets/libs/highlightjs/styles/vs2015.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-jarallax', get_template_directory_uri() . '/assets/libs/jarallax/dist/jarallax.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-quill', get_template_directory_uri() . '/assets/libs/quill/dist/quill.core.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-style', get_template_directory_uri() . '/assets/css/theme.min.css', array(), _S_VERSION, 'all');
+
+
+	// Internet Explorer HTML5 support
+	wp_enqueue_script('html5hiv', get_template_directory_uri() . '/inc/assets/js/html5.js', array(), _S_VERSION, false);
+	wp_script_add_data('html5hiv', 'conditional', 'lt IE 9');
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
 }
-add_action('wp_enqueue_scripts', 'postery_scripts');
+add_action('wp_enqueue_scripts', 'postery_scripts', 0);
+
 
 /**
  * Implement the Custom Header feature.
@@ -249,14 +254,6 @@ function postery_posters_setup()
 // adding the function to the Wordpress init
 add_action('init', 'postery_posters_setup');
 
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
-//remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
-
 
 // attribute slug to title
 if (!function_exists('attribute_slug_to_title')) {
@@ -281,7 +278,6 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
-//remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50);
 
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 30);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 40);

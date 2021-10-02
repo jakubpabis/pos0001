@@ -39,22 +39,6 @@
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap" rel="stylesheet">
-
-	<!-- Libs CSS -->
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/fonts/Feather/feather.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/aos/dist/aos.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/choices.js/public/assets/styles/choices.min.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/flickity-fade/flickity-fade.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/flickity/dist/flickity.min.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/highlightjs/styles/vs2015.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/jarallax/dist/jarallax.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/quill/dist/quill.core.css" />
-
-	<!-- Theme CSS -->
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/theme.min.css">
-
 </head>
 
 <body <?php body_class('pt-10 pt-md-0'); ?> style="overflow: visible;">
@@ -420,7 +404,7 @@
 			</div>
 
 			<!-- Button -->
-			<a class="btn-cart btn btn-secondary btn-lg btn-rounded-circle lift ml-auto" href="/cart" target="_blank">
+			<a class="btn-cart btn btn-secondary btn-lg btn-rounded-circle lift ml-auto" href="/cart">
 				<i class="fe fe-shopping-cart"></i>
 			</a>
 
