@@ -43,7 +43,7 @@
 
 	<!-- NAVBAR
     ================================================== -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom px-4">
+	<nav class="navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top px-4">
 		<div class="container-fluid">
 
 			<!-- Brand -->
@@ -65,12 +65,7 @@
 				</button>
 
 				<!-- Navigation -->
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							Collection
-						</a>
-					</li>
+				<ul class="navbar-nav ml-auto mr-7">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
 							About
@@ -404,8 +399,12 @@
 					</li>
 				</ul>
 
-
 			</div>
+
+			<!-- Button -->
+			<a class="btn-cart btn btn-secondary btn-lg btn-rounded-circle lift ml-auto" data-toggle="modal" href="#modalCart">
+				<i class="fe fe-shopping-cart"></i>
+			</a>
 
 		</div>
 	</nav>

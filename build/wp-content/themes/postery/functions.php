@@ -173,7 +173,7 @@ function postery_scripts()
 	wp_enqueue_style('postery-highlight', get_template_directory_uri() . '/assets/libs/highlightjs/styles/vs2015.css', array(), _S_VERSION, 'all');
 	wp_enqueue_style('postery-jarallax', get_template_directory_uri() . '/assets/libs/jarallax/dist/jarallax.css', array(), _S_VERSION, 'all');
 	wp_enqueue_style('postery-quill', get_template_directory_uri() . '/assets/libs/quill/dist/quill.core.css', array(), _S_VERSION, 'all');
-	wp_enqueue_style('postery-style', get_template_directory_uri() . '/assets/css/theme.min.css', array(), _S_VERSION, 'all');
+	wp_enqueue_style('postery-style', get_template_directory_uri() . '/assets/css/theme.css', array(), _S_VERSION, 'all');
 
 
 	// Internet Explorer HTML5 support

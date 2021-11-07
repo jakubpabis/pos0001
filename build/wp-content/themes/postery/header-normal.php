@@ -11,14 +11,13 @@
  */
 
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/apple-icon-72x72.png">
@@ -40,7 +39,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('pt-10 pt-md-0'); ?> style="overflow: visible;">
+<body <?php body_class('pt-12'); ?> style="overflow: visible;">
 
 	<!-- NAVBAR
     ================================================== -->
@@ -49,7 +48,7 @@
 
 			<!-- Brand -->
 			<a class="navbar-brand mb-2" href="/">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-h.svg" class="navbar-brand-img" alt="Postery.studio logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-h.svg" class="navbar-brand-img" alt="Postery Studio logo">
 			</a>
 
 			<!-- Toggler -->

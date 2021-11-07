@@ -211,6 +211,8 @@
 	</div> <!-- / .container -->
 </footer>
 
+<?php get_template_part('template-parts/cart-modal'); ?>
+
 <?php wp_footer(); ?>
 
 <!-- JAVASCRIPT
