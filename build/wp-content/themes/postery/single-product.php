@@ -9,7 +9,8 @@
  */
 
 get_header('shop');
-global $product;
+global $woocommerce;
+$product = new WC_Product(get_the_ID());
 ?>
 
 <!-- CONTENT

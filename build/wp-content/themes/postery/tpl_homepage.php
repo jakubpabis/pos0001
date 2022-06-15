@@ -73,7 +73,7 @@ $home_products = new WP_Query($args);
 				<?php $i = 1;
 				while ($home_products->have_posts()) : $home_products->the_post(); ?>
 					<?php
-					$att_id = get_post_thumbnail_id($item);
+					$att_id = get_post_thumbnail_id(get_the_ID());
 					$thumb = wp_get_attachment_image_src($att_id, 'full');
 					$url = $thumb[0];
 					$alt = get_post_meta($att_id, '_wp_attachment_image_alt', true);

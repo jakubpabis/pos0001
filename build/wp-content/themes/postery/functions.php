@@ -266,7 +266,7 @@ if (!function_exists('attribute_slug_to_title')) {
 				$value = $term->name;
 			}
 		} else {
-			$value = apply_filters('woocommerce_variation_option_name', $value);
+			$value = apply_filters('woocommerce_variation_option_name', $slug);
 		}
 		return $value;
 	}
